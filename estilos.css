@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f9fd;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #334155;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   INICIO
+========================= */
+
+.hero {
+    min-height: 620px;
+    padding: 90px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    background: linear-gradient(135deg, #eaf4ff, #ffffff);
+}
+
+.hero-text {
+    max-width: 620px;
+}
+
+.etiqueta {
+    display: inline-block;
+    color: #2563eb;
+    background-color: #dbeafe;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    color: #172554;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.hero-text h2 {
+    font-size: 31px;
+    color: #334155;
+    margin-bottom: 22px;
+    line-height: 1.25;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 30px;
+    max-width: 580px;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* TARJETA DEL INICIO */
+
+.hero-card {
+    width: 350px;
+    background-color: white;
+    padding: 45px 35px;
+    text-align: center;
+    border-radius: 22px;
+    box-shadow: 0 18px 40px rgba(37, 99, 235, 0.13);
+}
+
+.icono {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.hero-card h3 {
+    font-size: 21px;
+    color: #172554;
+    margin-bottom: 14px;
+}
+
+.hero-card p {
+    color: #64748b;
+}
+
+
+/* =========================
+   SECCIONES GENERALES
+========================= */
+
+.seccion {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.seccion h2 {
+    font-size: 36px;
+    color: #172554;
+    margin-bottom: 18px;
+}
+
+.descripcion {
+    max-width: 760px;
+    margin: 0 auto 50px;
+    color: #64748b;
+    font-size: 17px;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 300px;
+    background-color: white;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.10);
+}
+
+.emoji {
+    font-size: 44px;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.tarjeta p {
+    color: #64748b;
+}
+
+
+/* =========================
+   PROBLEMA
+========================= */
+
+.problema {
+    background-color: #eef6ff;
+}
+
+.problema-caja {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+.problema-icono {
+    min-width: 80px;
+    height: 80px;
+    background-color: #dbeafe;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.problema-caja h3 {
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.problema-caja p {
+    color: #64748b;
+}
+
+
+/* =========================
+   OBJETIVOS
+========================= */
+
+.objetivos {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.objetivo {
+    width: 290px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+    border-top: 4px solid #2563eb;
+}
+
+.objetivo span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.objetivo h3 {
+    color: #172554;
+    margin: 10px 0;
+}
+
+.objetivo p {
+    color: #64748b;
+}
+/* =========================
+   CÓMO FUNCIONA
+========================= */
+
+.funcionamiento {
+    background-color: #ffffff;
+}
+
+.pasos {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.paso {
+    position: relative;
+    width: 245px;
+    background-color: #f8fbff;
+    padding: 30px 22px;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.paso:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.10);
+}
+
+.paso > span {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #93c5fd;
+}
+
+.paso-icono {
+    font-size: 40px;
+    margin: 10px 0 15px;
+}
+
+.paso h3 {
+    color: #172554;
+    margin-bottom: 10px;
+}
+
+.paso p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* =========================
+   BENEFICIOS
+========================= */
+
+.beneficios {
+    background-color: #f6f9fd;
+}
+
+.beneficio {
+    width: 270px;
+}
+
+.beneficio .emoji {
+    margin-bottom: 18px;
+}
+/* =========================
+   MÉTODOS
+========================= */
+
+.metodos {
+    background-color: #eef6ff;
+}
+
+.metodo span {
+    display: block;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   PÚBLICO OBJETIVO
+========================= */
+
+.publico {
+    background-color: #eef6ff;
+}
+
+.publico-contenido {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    text-align: left;
+}
+
+.publico-icono {
+    min-width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #dbeafe, #bae6fd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+}
+
+.publico-texto {
+    max-width: 650px;
+}
+
+.publico-texto h2 {
+    font-size: 36px;
+    color: #172554;
+    margin-bottom: 18px;
+}
+
+.publico-texto > p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.publico-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.publico-lista div {
+    color: #334155;
+    font-weight: 500;
+}
+
+.publico-lista span {
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 8px;
+}
+/* =========================
+   FUNCIONALIDADES
+========================= */
+
+#funciones {
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   PROPUESTA
+========================= */
+
+.propuesta {
+    margin: 40px 8% 90px;
+    padding: 60px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #2563eb, #38bdf8);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.propuesta .etiqueta {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.propuesta h2 {
+    font-size: 34px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    max-width: 700px;
+}
+
+.propuesta p {
+    max-width: 700px;
+    color: #eff6ff;
+}
+
+.propuesta-icono {
+    font-size: 90px;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #cbd5e1;
+    margin: 6px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 700px;
+    }
+
+    .hero-text h1 {
+        font-size: 52px;
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .propuesta {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    .hero-text h1 {
+        font-size: 44px;
+    }
+
+    .hero-text h2 {
+        font-size: 25px;
+    }
+
+    .seccion {
+        padding: 70px 6%;
+    }
+
+    .seccion h2 {
+        font-size: 30px;
+    }
+
+    .problema-caja {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .propuesta {
+        margin: 20px 6% 70px;
+        padding: 40px 25px;
+    }
+
+    .propuesta h2 {
+        font-size: 28px;
+    }
+
+    .propuesta-icono {
+        font-size: 70px;
+    }
+}
+    .publico-contenido {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .publico-texto {
+        max-width: 700px;
+    }
+
+    .publico-lista {
+        text-align: left;
+    }
